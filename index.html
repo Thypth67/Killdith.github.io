@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trending Mobile App</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+      color:white;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:420px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(12px);
+      border-radius:25px;
+      padding:25px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
+      text-align:center;
+      animation:fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .badge{
+      display:inline-block;
+      background:#22c55e;
+      color:white;
+      padding:8px 16px;
+      border-radius:999px;
+      font-size:13px;
+      margin-bottom:15px;
+      font-weight:bold;
+    }
+
+    h1{
+      font-size:32px;
+      margin-bottom:12px;
+    }
+
+    p{
+      color:#d1d5db;
+      line-height:1.6;
+      margin-bottom:20px;
+      font-size:15px;
+    }
+
+    .preview{
+      width:100%;
+      border-radius:18px;
+      margin-bottom:20px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .features{
+      text-align:left;
+      margin-bottom:25px;
+    }
+
+    .features div{
+      background:rgba(255,255,255,0.06);
+      padding:12px;
+      border-radius:12px;
+      margin-bottom:10px;
+      font-size:14px;
+    }
+
+    .btn{
+      display:block;
+      width:100%;
+      padding:16px;
+      background:linear-gradient(135deg,#22c55e,#16a34a);
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      border-radius:14px;
+      transition:0.3s;
+      margin-bottom:15px;
+      box-shadow:0 6px 20px rgba(34,197,94,0.4);
+    }
+
+    .btn:hover{
+      transform:scale(1.03);
+    }
+
+    .small{
+      font-size:12px;
+      color:#9ca3af;
+      margin-top:10px;
+    }
+
+    .counter{
+      margin-top:15px;
+      font-size:14px;
+      color:#22c55e;
+      font-weight:bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="badge">TRENDING NOW</div>
+
+    <h1>Gamvengers</h1>
+
+    <p>
+      One of the most downloaded mobile action games right now.
+      Fast gameplay, exciting battles and smooth Android performance.
+    </p>
+
+    <img class="preview" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop" alt="Game Image">
+
+    <div class="features">
+      <div>✔ Smooth Android gameplay</div>
+      <div>✔ Fast mobile performance</div>
+      <div>✔ Trending among gamers</div>
+      <div>✔ Works best on MTN mobile data</div>
+    </div>
+
+    <a class="btn" href="https://telkucton.org/cpa/13825/1813">
+      PLAY NOW
+    </a>
+
+    <div class="counter">
+      🔥 Thousands of users are checking this out
+    </div>
+
+    <div class="small">
+      Mobile users only.
+    </div>
+
+  </div>
+
+</body>
+</html>
